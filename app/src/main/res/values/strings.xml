@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Simple Black Jack</string>
+
+    <string name="ruleContent">It is similar to traditional Black Jack Game Rules with following exceptions:\n
+        No bet amount, No insurance, No double down, No splits, Single hand per shuffle,\n
+        Maximum 4 hits (6 cards max) per player\n
+        Only two players: You and Dealer and You always play first.</string>
+
+    <string name="gamerDescription"> When \"HIT\" button is pressed, top card from deck is dealt to player.\n
+        When \"STAND\" button is pressed, player\'s turn is over and the total value of the hand is calculated.\n
+        -Card values of 2 to 10 are totaled by their face values\n
+        -Face cards (Jack, Queen, King) are totaled by 10, Aces are either 1 or 11\n
+        Two kind of totals are calculated: \"Soft Total\" and \"Hard Total\"\n
+        -\"Soft Total\" when Ace has value of 1\n
+        -\"Hard Total\" when first Ace has value of 11, all others are counted as 1\n
+        The final or best total will be the highest value of either \"Hard\" or \"Soft\" total which ever is closest to but not larger than 21.</string>
+
+
+    <string name="condition">Whoever got Black Jack (an Ace with either 10, Jack, Queen or King) win the game.\n
+        Whoever has the higher best total win the game.\n
+        Whoever has best total higher than 21 lose the game, and a \"BUSTED\" message will be displayed.\n
+        If you and dealer has the same best total, then you are tied and nobody wins.</string>
+
+    <string name="dealerDescription">No \"HIT\" nor \"STAND\" for dealer.\n
+        Dealer revealed it\'s first card, then calculate the \"Soft\" and \"Hard\" totals.\n
+        Dealer will continue to draw the card from deck only if following condition are met:\n
+        1. The \"Soft Total\" is less than 18 or \"Hard Total\" is less than 17, and\n
+        2. The number of cards that dealer has is less than 6, and\n
+        3. The best total of dealer is less than your best total, and\n
+        4. The best total is not more than 21.</string>
+
+    <string name="doneWith">You have finished the instructions and are ready to play</string>
+</resources>
